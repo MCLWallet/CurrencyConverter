@@ -3,9 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
-
     defaultConfig {
-        applicationId "com.example.marcell.currencyconverter"
+        applicationId 'com.example.marcell.currencyconverter'
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
@@ -20,9 +19,11 @@ android {
             debuggable true
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.0.0'
 }
