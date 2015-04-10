@@ -10,20 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Marcell is the best!!! You just entered:"
-        android:id="@+id/textView2"
-        android:layout_marginTop="185dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/textView3"
-        android:layout_marginTop="121dp"
-        android:layout_below="@+id/textView2"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

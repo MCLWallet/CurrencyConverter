@@ -11,17 +11,27 @@ import android.widget.TextView;
 
 public class ResultActivity extends ActionBarActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        // Get the message from the intent
+
+        // Get Extra messages from the intent
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        Double rate = intent.getDoubleExtra("rate",0);
+        Double amount = intent.getDoubleExtra("amount", 0);
+        String currency = intent.getStringExtra("currency");
+
+        // Currency Calculation
+        Double result = amount;
+        result=result*rate;
+
 
         // Read the textView
         TextView t1 = (TextView)findViewById(R.id.textView3);
-        t1.setText(message);
+        t1.setText(amount+" EUR = "+result+" "+currency);
+
 
     }
 
