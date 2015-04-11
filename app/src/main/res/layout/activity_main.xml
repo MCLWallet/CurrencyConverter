@@ -12,9 +12,9 @@
         android:ems="10"
         android:id="@+id/amount"
         android:autoText="false"
-        android:text=" Enter the amount"
-        android:layout_marginBottom="119dp"
-        android:layout_above="@+id/button"
+        android:text=""
+        android:hint="Enter the amount"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -22,23 +22,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate"
-        android:id="@+id/button"
+        android:id="@+id/calculate"
         android:clickable="true"
         android:elegantTextHeight="false"
-        android:onClick="btnGetCurrency"
-        android:layout_marginBottom="134dp"
-        android:layout_alignParentBottom="true"
+        android:onClick="onClickCalculate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentBottom="true" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
         android:spinnerMode="dropdown"
-        android:layout_alignTop="@+id/amount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/amount" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/currentcylogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="the most current rates"
+        android:textSize="20sp"
+        android:id="@+id/tagline"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Euro (EUR)"
+        android:textSize="18sp"
+        android:id="@+id/euro"
+        android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/amount"
         android:layout_toEndOf="@+id/amount" />
 

@@ -11,7 +11,61 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
-        android:id="@+id/textView3"
+        android:id="@+id/euroAmount"
+        android:textSize="19sp"
+        android:layout_above="@+id/arrow"
+        android:layout_alignLeft="@+id/tagline"
+        android:layout_alignStart="@+id/tagline"
+        android:layout_marginBottom="27dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/currentcylogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="the most current rates"
+        android:textSize="20sp"
+        android:id="@+id/tagline"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New"
+        android:id="@+id/newMain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onButtonReturnToMain" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/foreignAmount"
+        android:textSize="19sp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/arrow"
+        android:layout_alignLeft="@+id/euroAmount"
+        android:layout_alignStart="@+id/euroAmount" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/arrow"
+        android:src="@drawable/arrowicon"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 

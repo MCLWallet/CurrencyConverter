@@ -1,15 +1,16 @@
 package com.example.marcell.currencyconverter;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 
-
-public class ResultActivity extends ActionBarActivity {
+// Result/End-Screen
+public class ResultActivity extends Activity {
 
 
     @Override
@@ -28,9 +29,12 @@ public class ResultActivity extends ActionBarActivity {
         result=result*rate;
 
 
-        // Read the textView
-        TextView t1 = (TextView)findViewById(R.id.textView3);
-        t1.setText(amount+" EUR = "+result+" "+currency);
+        // The result as an Text-View output
+        TextView t1 = (TextView)findViewById(R.id.euroAmount);
+        t1.setText(amount+" Euro (EUR)");
+
+        TextView t2 = (TextView)findViewById(R.id.foreignAmount);
+        t2.setText(result+" "+currency);
 
 
     }
@@ -56,5 +60,11 @@ public class ResultActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    // When the NEW-Button is clicked, this Method brings the user back to the Start-Screen
+    public void onButtonReturnToMain(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

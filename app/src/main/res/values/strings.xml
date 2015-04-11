@@ -39,4 +39,38 @@
         <item>ZAR</item>
     </string-array>
 
+    <string-array name="currencies_meaning">
+        <item>Australian Dollar (AUD)</item>
+        <item>Bulgarian Lev (BGN)</item>
+        <item>Brazilian Real (BRL)</item>
+        <item>Canadian Dollar (CAD)</item>
+        <item>Swiss Franc (CHF)</item>
+        <item>Renminbi Yuan (CNY)</item>
+        <item>Czech Koruna (CZK)</item>
+        <item>Danish Krone (DKK)</item>
+        <item>Pound Sterling (GBP)</item>
+        <item>Hong Kong Dollar (HKD)</item>
+        <item>Croatian Kuna (HRK)</item>
+        <item>Hungarian Forint (HUF)</item>
+        <item>Indonesian Rupiah (IDR)</item>
+        <item>Israeli New Shekel (ILS)</item>
+        <item>Indian Rupee (INR)</item>
+        <item>Japanese Yen (JPY)</item>
+        <item>South Korean Won (KRW)</item>
+        <item>Mexican Peso (MXN)</item>
+        <item>Malaysian Ringgit (MYR)</item>
+        <item>Norwegian Krone (NOK)</item>
+        <item>New Zealand Dollar (NZD)</item>
+        <item>Philippine Peso (PHP)</item>
+        <item>Polish Zloty (PLN)</item>
+        <item>Romanian Leu (RON)</item>
+        <item>Russian Ruble (RUB)</item>
+        <item>Swedish Krona (SEK)</item>
+        <item>Singapore Dollar (SGD)</item>
+        <item>Thai Baht (THB)</item>
+        <item>Turkish Lira (TRY)</item>
+        <item>US-Dollar (USD)</item>
+        <item>South African Rand (ZAR)</item>
+    </string-array>
+
 </resources>
